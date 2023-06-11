@@ -1,0 +1,17 @@
+obstacle_range: 3.0
+raytrace_range: 3.5
+
+footprint: [[-0.105, -0.105], [-0.105, 0.105], [0.041, 0.105], [0.041, -0.105]]
+footprint_padding: 0.1
+#robot_radius: 0.105
+
+ 
+
+map_type: costmap  # 2D cost map , 3D voxel
+
+
+  
+#observation_sources: scan
+#scan: {sensor_frame: base_scan, data_type: LaserScan, topic: scan, marking: true, clearing: true}
+
+
