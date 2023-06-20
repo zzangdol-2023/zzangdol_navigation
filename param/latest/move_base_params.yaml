@@ -12,4 +12,4 @@ oscillation_distance: 0.2
 base_local_planner: "dwa_local_planner/DWAPlannerROS"
 
 # Set Global Planner 
-base_global_planner: "global_planner/GlobalPlanner"
+base_global_planner: "navfn/NavfnROS"

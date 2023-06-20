@@ -11,6 +11,23 @@ map_type: costmap  # 2D cost map , 3D voxel
 
 
   
+
+obstacle_layer:
+  enabled: true
+  map_type: costmap
+  max_obstacle_height:  0.3 # Height of robot 30cm 
+  combination_method:   1
+  track_unknown_space:  true 
+  observation_sources: laser_scan_sensor
+  laser_scan_sensor: {sensor_frame: lidar_link, data_type: LaserScan, topic: /scan, marking: true, clearing: true}
+
+inflation_layer:
+  enabled: true
+  cost_scaling_factor: 10
+  inflation_radius: 0.10   # Length of Path : 150cm , Width of robot ~ 20cm =>   
+
+static_layer:
+  enabled: true  
 #observation_sources: scan
 #scan: {sensor_frame: base_scan, data_type: LaserScan, topic: scan, marking: true, clearing: true}
 
