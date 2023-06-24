@@ -66,12 +66,7 @@ def main():
 
 #출발지점
 
-#출발지점-코너1 직선구간
-    add_waypoint(path, 4.09 , -0.36)
-    add_waypoint(path, 10.4 , -0.5)
 
-#코너 1 in
-    add_waypoint(path, 18.9 , -0.735 )
 
 
 #코너 1 out
@@ -126,9 +121,14 @@ def main():
     add_waypoint(path, -14.1 , 0.8)
     add_waypoint(path, -8.12 , 0.62)
 
-
-#도착지점
     add_waypoint(path, -2.12, 0.509)
+
+#도착지점 코너1 직선구간
+    add_waypoint(path, 4.09 , -0.36)
+    add_waypoint(path, 10.4 , -0.5)
+
+#코너 1 in
+    add_waypoint(path, 18.9 , -0.735 )
 
 ######
 
