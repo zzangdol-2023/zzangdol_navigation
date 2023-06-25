@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 import rospy
 import actionlib
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
@@ -16,7 +15,7 @@ def add_waypoint(path, x, y):
 # 현재 위치와 목적지 위치를 비교하여 도착 여부를 확인하는 함수
 def check_arrival(current_pose, goal_pose):
     # distance_threshold = 3  # 도착 거리 임계값 설정
-    distance_threshold = 1  # 도착 거리 임계값 설정
+    distance_threshold = 2  # 도착 거리 임계값 설정
 
     # 현재 위치와 목적지 위치 사이의 거리 계산
     distance = ((goal_pose.pose.position.x - current_pose.pose.position.x) ** 2 +
@@ -46,26 +45,22 @@ def main():
     add_waypoint(path, 10.4 , -0.5)
 
 #코너 1 in
-    add_waypoint(path, 18.9 , -0.735)
-        
-#코너 1 mid
-    add_waypoint(path, 19.8 , 3.81)
+    add_waypoint(path, 18.9 , -0.735 )
+
 
 #코너 1 out
-    add_waypoint(path, 21.6 , 5.91 )
+    add_waypoint(path, 21.7 , 5 )
 
 
 #코너 1-2 직선구간
-    add_waypoint(path, 22.1 , 8.49)
-    add_waypoint(path, 22.4 , 14.0)
-    add_waypoint(path, 22.5 , 21.3)
-    add_waypoint(path, 22.6 , 27.8)
+    add_waypoint(path, 22.4 , 13.6)
+    add_waypoint(path, 22.5 , 21.2)
+    add_waypoint(path, 22.7 , 27.8)
+
 
 #코너 2 in
     add_waypoint(path, 22.8 , 37.4)
 
-#코너 2 mid
-    # add_waypoint(path, 22.8 , 37.4)
 
 #코너 2 out 
     add_waypoint(path, 18.8 , 39.4)
@@ -79,33 +74,29 @@ def main():
 
 
 #코너 3 in
-    add_waypoint(path, -20.9 , 41.9)
-    
-#코너 3 mid
-    add_waypoint(path, -24.4 , 39.1)
+    add_waypoint(path, -20.9 , 40.8)
+    add_waypoint(path, -21.7 , 41.6)
+
 
 #코너 3 out
-    add_waypoint(path, -24.6 , 37.9)
+    add_waypoint(path, -24.6 , 38.2)
 
 
 #코너 3-4 직선구간
     add_waypoint(path, -24.8 , 32)
     add_waypoint(path, -25.1 , 26.1)
-    add_waypoint(path, -25.3 , 18.8)
+    add_waypoint(path, -25.3 , 18.8 )
     add_waypoint(path, -25.2 , 12.6)
 
 
 #코너 4 in
     add_waypoint(path, -25.4 , 6.73)
-    
-#코너 4 mid
-    add_waypoint(path, -23.3 , 4.97)
+
 
 #코너 4 out
-    add_waypoint(path, -21.3 , 1.32)
+    add_waypoint(path, -21.3 , 1.12)
 
 #코너 4-도착지점 직선구간
-    add_waypoint(path, -17.6 , 0.934)
     add_waypoint(path, -14.1 , 0.8)
     add_waypoint(path, -8.12 , 0.62)
 
