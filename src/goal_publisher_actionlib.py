@@ -15,7 +15,7 @@ def add_waypoint(path, x, y):
 # 현재 위치와 목적지 위치를 비교하여 도착 여부를 확인하는 함수
 def check_arrival(current_pose, goal_pose):
     # distance_threshold = 3  # 도착 거리 임계값 설정
-    distance_threshold = 2  # 도착 거리 임계값 설정
+    distance_threshold = 1  # 도착 거리 임계값 설정
 
     # 현재 위치와 목적지 위치 사이의 거리 계산
     distance = ((goal_pose.pose.position.x - current_pose.pose.position.x) ** 2 +
@@ -35,32 +35,6 @@ def main():
 
     # 사각형 경로의 목적지 포인트 설정
     path = []
-##### backup(1st point)
-    # ## 출발 후 캘리브레이션 포인트
-    # add_waypoint(path, -3.0, 18.0)   # 오도 우측 복도 시작
-    
-    # ## 첫번째코너
-    # add_waypoint(path, -4.5, 5.3)   # 복사실 코너 인
-    # add_waypoint(path, 2.9, -0.7)   # 복사실 코너 아웃
-    # add_waypoint(path, 16.5, -2.96)
-    
-    # ## 두번째코너
-    # add_waypoint(path, 27.2, -2.96)   # 두번째 코너 인
-    # add_waypoint(path, 36.0, 0.96)   # 두번째 코너 아웃
-    # add_waypoint(path, 37.6, 18.3)    
-    
-    # ## 세번째코너
-    # add_waypoint(path, 39.4, 37.9)   # 세번째 코너 인
-    # add_waypoint(path, 36.8, 43.8)   # 세번째 코너 아웃
-    # add_waypoint(path, 24.4, 44.9)
-    # ## 네번째코너
-    # add_waypoint(path, 7.71, 46.6)   # 네번째 코너 인
-    # add_waypoint(path, -0.36, 42.7)   # 네번째 코너 아웃
-    
-    # ## 목적지
-    # add_waypoint(path, -2.77, 24.6)   # 네번째 코너 아웃
-#####
-##### second(2nd point)
 #졸프 Move base goal point
 
 
