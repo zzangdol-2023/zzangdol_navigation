@@ -15,7 +15,7 @@ def add_waypoint(path, x, y):
 # 현재 위치와 목적지 위치를 비교하여 도착 여부를 확인하는 함수
 def check_arrival(current_pose, goal_pose):
     # distance_threshold = 3  # 도착 거리 임계값 설정
-    distance_threshold = 2  # 도착 거리 임계값 설정
+    distance_threshold = 1  # 도착 거리 임계값 설정
 
     # 현재 위치와 목적지 위치 사이의 거리 계산
     distance = ((goal_pose.pose.position.x - current_pose.pose.position.x) ** 2 +
@@ -49,7 +49,7 @@ def main():
 
 
 #코너 1 out
-    add_waypoint(path, 21.7 , 5 )
+    add_waypoint(path, 22.1 , 5 )
 
 
 #코너 1-2 직선구간
@@ -97,7 +97,7 @@ def main():
     add_waypoint(path, -21.3 , 1.12)
 
 #코너 4-도착지점 직선구간
-    add_waypoint(path, -14.1 , 0.8)
+    add_waypoint(path, -14.1 , 0.649)
     add_waypoint(path, -8.12 , 0.62)
 
 
