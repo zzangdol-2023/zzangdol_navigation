@@ -35,32 +35,6 @@ def main():
 
     # 사각형 경로의 목적지 포인트 설정
     path = []
-##### backup(1st point)
-    # ## 출발 후 캘리브레이션 포인트
-    # add_waypoint(path, -3.0, 18.0)   # 오도 우측 복도 시작
-    
-    # ## 첫번째코너
-    # add_waypoint(path, -4.5, 5.3)   # 복사실 코너 인
-    # add_waypoint(path, 2.9, -0.7)   # 복사실 코너 아웃
-    # add_waypoint(path, 16.5, -2.96)
-    
-    # ## 두번째코너
-    # add_waypoint(path, 27.2, -2.96)   # 두번째 코너 인
-    # add_waypoint(path, 36.0, 0.96)   # 두번째 코너 아웃
-    # add_waypoint(path, 37.6, 18.3)    
-    
-    # ## 세번째코너
-    # add_waypoint(path, 39.4, 37.9)   # 세번째 코너 인
-    # add_waypoint(path, 36.8, 43.8)   # 세번째 코너 아웃
-    # add_waypoint(path, 24.4, 44.9)
-    # ## 네번째코너
-    # add_waypoint(path, 7.71, 46.6)   # 네번째 코너 인
-    # add_waypoint(path, -0.36, 42.7)   # 네번째 코너 아웃
-    
-    # ## 목적지
-    # add_waypoint(path, -2.77, 24.6)   # 네번째 코너 아웃
-#####
-##### second(2nd point)
 #졸프 Move base goal point
 
 
