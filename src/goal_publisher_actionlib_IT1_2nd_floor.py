@@ -41,7 +41,9 @@ def main():
 
 #출발지점 - 코너 1 직선구간
     add_pathPoint(path, 15.8 , -1.46) # in
+    add_pathPoint(path, 24.9 , -1.33) # mid-1
     add_pathPoint(path, 34.7 , -2.99) # mid
+    add_pathPoint(path, 42.6 , -3.82) # mid-2
 
 #코너 1
     add_pathPoint(path, 51.8 , -4.48) # 직선구간 out - 코너1 in
@@ -49,15 +51,19 @@ def main():
     add_pathPoint(path, 58.5 , -1.15 ) # 코너1 out - 직선구간 in
 
 #코너 1 - 코너2 직선구간
+    add_pathPoint(path, 59.5 , 11.3) # mid -1
     add_pathPoint(path, 60 , 17.6) # mid
+    add_pathPoint(path, 60.4 , 23.9) # mid
     
 #코너 2 
-    add_pathPoint(path, 60.8 , 28.8) # 직선구간 out - 코너2 in
+    add_pathPoint(path, 60.8 , 30.0) # 직선구간 out - 코너2 in
     add_pathPoint(path, 58.8 , 35.2) # 코너2 mid
     add_pathPoint(path, 54.9 , 36.3) # 코너2 out - 직선구간 in
 
 #코너 2 - 코너3 직선구간
+    add_pathPoint(path, 48.2 , 36.9) # mid-1
     add_pathPoint(path, 37.7 , 37.4) # mid
+    add_pathPoint(path, 25.6 , 38.1) # mid-2
 
 #코너 3 
     add_pathPoint(path, 18.3 , 38.8) # 직선구간 out - 코너3 in
@@ -65,7 +71,9 @@ def main():
     add_pathPoint(path, 13.4 , 31.4) # 코너3 out - 직선구간 in
 
 #코너 3 - 4 직선구간
-    add_pathPoint(path, 12.6 , 21.3)
+    add_pathPoint(path, 12.9 , 26.3) # mid-1 
+    add_pathPoint(path, 12.2 , 19.6) # mid
+    add_pathPoint(path, 11.6 , 10.3) # mid-2
     
 #코너 4 in
     add_pathPoint(path, 11.4 , 0.412) # 직선구간 out - 코너4 in
