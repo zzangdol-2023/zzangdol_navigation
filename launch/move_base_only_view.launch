@@ -1,7 +1,7 @@
 <!-- -->
 
 <launch>
-  <!-- <arg name="map_file" default="second"/>
+  <arg name="map_file" default="second"/>
   
   <arg name="scan_topic"     default="scan"/>
   <arg name="initial_pose_x" default="0.0"/>
@@ -16,7 +16,7 @@
   <!-- Move Base Node -->
   <!-- Subscribe: /move_base_simple/goal -->
   <!-- Publish: /cmd_vel -->
-  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">\
+  <!-- <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">\
     <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS" />
     
     <rosparam file="$(find zzangdol_navigation)/param/costmap_common_params.yaml" command="load" ns="global_costmap" />
