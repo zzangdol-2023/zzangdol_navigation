@@ -41,7 +41,7 @@ def main():
 
 #출발지점 - 코너 1 직선구간
     add_pathPoint(path, 15.8 , -1.46) # in
-    add_pathPoint(path, 24.9 , -2.08) # mid-1
+    add_pathPoint(path, 24.9 , -2.38) # mid-1
     add_pathPoint(path, 34.7 , -2.99) # mid
     add_pathPoint(path, 42.6 , -3.82) # mid-2
 
