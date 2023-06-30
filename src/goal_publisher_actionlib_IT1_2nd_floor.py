@@ -21,7 +21,7 @@ def add_pathPoint(path, x, y):
 
 # 현재 위치와 목적지 위치를 비교하여 도착 여부를 확인하는 함수
 def check_arrival(current_pose, goal_pose):
-    distance_threshold = 1  # 도착 거리 임계값 설정
+    distance_threshold = 2  # 도착 거리 임계값 설정
 
     # 현재 위치와 목적지 위치 사이의 거리 계산
     distance = ((goal_pose.pose.position.x - current_pose.pose.position.x) ** 2 +
@@ -47,7 +47,7 @@ def main():
 
 #코너 1
     add_pathPoint(path, 51.8 , -4.48) # 직선구간 out - 코너1 in
-    add_pathPoint(path, 55.5 , -4.67) # 코너1 mid
+    add_pathPoint(path, 57.3 , -4.53) # 코너1 mid
     add_pathPoint(path, 58.5 , -1.15 ) # 코너1 out - 직선구간 in
 
 #코너 1 - 코너2 직선구간
@@ -95,6 +95,7 @@ def main():
         # 이동 명령 전송
         client.send_goal(goal_location)
 
+        rate = rospy.Rate(10)
         # 이동 명령 수행 및 도착 여부 확인
         while not rospy.is_shutdown():
             # 현재 위치 수신 대기
@@ -105,6 +106,8 @@ def main():
             if flag:
                 rospy.loginfo(f"Reached goal: {goal_pose.pose.position}")
                 break
+            rate.sleep()
+        
     rospy.loginfo("All goals achieved")
 
 if __name__ == "__main__":

@@ -36,6 +36,9 @@
     <param name="base_frame_id" value="base_footprint"/>    
   </node>
   
+  <node pkg="zzangdol_navigation" type="current_pose_publisher.py" name="current_pose_publisher"/>
+  <node pkg="zzangdol_navigation" type="goal_publisher_actionlib_IT1_2nd_floor.py" name="goal_publisher_actionlib_IT1_2nd_floor"/>
+  
   <node pkg="rviz" type="rviz" name="$(anon rviz)" 
   args="-d $(find zzangdol_navigation)/rviz/navigation_config.rviz"/>
 
