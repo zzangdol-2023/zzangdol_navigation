@@ -7,7 +7,7 @@ rospy.init_node('current_pose_publisher')
 
 tf_buffer = tf2_ros.Buffer()
 listener = tf2_ros.TransformListener(tf_buffer)
-pose_publisher = rospy.Publisher('current_pose', geometry_msgs.msg.PoseStamped, queue_size=10)
+pose_publisher = rospy.Publisher('current_pose', geometry_msgs.msg.PoseStamped, queue_size=3)
 rospy.loginfo("pose_publisher started")
 while not rospy.is_shutdown():
     try:

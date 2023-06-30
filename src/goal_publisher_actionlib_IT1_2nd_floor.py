@@ -27,7 +27,7 @@ def check_arrival(current_pose, goal_pose):
     distance = ((goal_pose.pose.position.x - current_pose.pose.position.x) ** 2 +
                 (goal_pose.pose.position.y - current_pose.pose.position.y) ** 2) ** 0.5
     
-    rospy.loginfo(f"distance to goal_pose: {distance}")
+    # rospy.loginfo(f"distance to goal_pose: {distance}")
     # 도착 여부 반환
     return distance < distance_threshold
 
