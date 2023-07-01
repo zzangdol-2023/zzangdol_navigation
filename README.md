@@ -5,15 +5,13 @@
 
 Below codes will execute cmd_vel_converter node, rosserial node,
 ```bash
-roslaunch 
+roslaunch zzangdol_navigation move_base_test.launch   
 ```
 
 ## 2. Package Explain
 
-Other launch files can execute with below commands
+#### src/current_pose_publisher.py
+it publishes current pose of robots. use to get goal trajectory. move_base_test.launch executes it.
 
-#### src / cmd_vel_converter.cpp
 
-- converter node which converts cmd_vel to cmd_vel_converted topic
-- cmd_vel converted topic is specific control value which is compatible with zzangdol-ai-car motor driver.
 

@@ -1,10 +1,9 @@
 obstacle_range: 3.0
 raytrace_range: 3.5
-#19X62
 footprint: [[-0.095, -0.031], [-0.095, 0.031], [0.095, 0.031], [0.095, -0.031]]
+#robot_radius: 0.105
 
 footprint_padding: 0.15
-#robot_radius: 0.105
 
 map_type: costmap  # 2D cost map , 3D voxel
 
