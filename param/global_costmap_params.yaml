@@ -6,7 +6,7 @@ global_costmap:
   publish_frequency: 2.0
   transform_tolerance: 0.2
 
-  resolution: 0.03
+  resolution: 0.02
   static_map: true
   
   plugins:
