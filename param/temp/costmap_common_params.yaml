@@ -1,27 +1,26 @@
-obstacle_range: 7.0
-raytrace_range: 7.5
+obstacle_range: 3.0
+raytrace_range: 3.5
+#19X62
 footprint: [[-0.095, -0.031], [-0.095, 0.031], [0.095, 0.031], [0.095, -0.031]]
+
+footprint_padding: 0.15
 #robot_radius: 0.105
 
-footprint_padding: 0.138
-
 map_type: costmap  # 2D cost map , 3D voxel
-
-transform_tolerance: 0.5
 
 obstacle_layer:
   enabled: true
   map_type: costmap
   max_obstacle_height:  0.3 # Height of robot 30cm 
   combination_method:   1
-  track_unknown_space:  False 
+  track_unknown_space:  true 
   observation_sources: laser_scan_sensor
   laser_scan_sensor: {sensor_frame: lidar_link, data_type: LaserScan, topic: /scan, marking: true, clearing: true}
 
 inflation_layer:
   enabled: true
-  cost_scaling_factor: 3.98
-  inflation_radius: 1.55  # Length of Path : 150cm , Width of robot ~ 20cm =>   
+  cost_scaling_factor: 2.5
+  inflation_radius: 1.00  # Length of Path : 150cm , Width of robot ~ 20cm =>   
 
 static_layer:
   enabled: true  
