@@ -13,15 +13,15 @@ obstacle_layer:
   max_obstacle_height:  0.3 # Height of robot 30cm 
   combination_method:   1
   track_unknown_space:  true
-  obstacle_range: 4.0
-  raytrace_range: 4.5 
+  obstacle_range: 7.0
+  raytrace_range: 7.5
   observation_sources: laser_scan_sensor
   laser_scan_sensor: {sensor_frame: lidar_link, data_type: LaserScan, topic: /scan, marking: true, clearing: true}
 
 inflation_layer:
   enabled: true
-  cost_scaling_factor: 4.5
-  inflation_radius: 0.8  # Length of Path : 150cm , Width of robot ~ 20cm =>   
+  cost_scaling_factor: 5.0 #5~9
+  inflation_radius: 3.0  # Length of Path : 150cm , Width of robot ~ 20cm =>   
 
 static_layer:
   enabled: true  

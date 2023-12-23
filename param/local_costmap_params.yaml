@@ -6,8 +6,10 @@ local_costmap:
   publish_frequency: 10.0
   
   rolling_window: true
-  width: 4
-  height: 4
+  #Local cost map creation boundary
+  width: 10 #local costmap width
+  height: 10 #local costmap height
+  
   resolution: 0.02
 
   plugins:
